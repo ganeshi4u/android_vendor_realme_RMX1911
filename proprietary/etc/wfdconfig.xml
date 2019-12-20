@@ -127,15 +127,15 @@
         </AuxStreamInfo>
 
 
-        <--! ifdef ODM_WT_EDIT  -->
-        <--! minchao.Zhu@ODM_WT.cn.wifi.basic,20190621, close wifi StandbyResumeCapability fuction. -->
+        <!-- ifdef ODM_WT_EDIT  -->
+        <!-- minchao.Zhu@ODM_WT.cn.wifi.basic,20190621, close wifi StandbyResumeCapability fuction. -->
         <!--
             Standby Resume capability is supported
         -->
         <StandbyResumeCapability>
             <Valid>0</Valid>
         </StandbyResumeCapability>
-        <--! endif ODM_WT_EDIT  -->
+        <!-- endif ODM_WT_EDIT  -->
 
         <!--
             Explicit AV format change
