@@ -414,7 +414,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/etc/19638/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/19638/default_volume_tables.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/FOSSConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FOSSConfig.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
-    vendor/realme/RMX1911/proprietary/vendor/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/etc/NOTICE.xml.gz \
     vendor/realme/RMX1911/proprietary/vendor/etc/OPPO_AD_calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/OPPO_AD_calib.cfg \
     vendor/realme/RMX1911/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/realme/RMX1911/proprietary/vendor/etc/acdbdata/19631/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/19631/Bluetooth_cal.acdb \
