@@ -1,0 +1,28 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "IDP"],
+    "soc_id": ["291", "246", "305", "394"],
+    "board_nfc_support": ["0", "1"]
+  },
+  "af6133e_0":{
+    "owner": "sns_af6133e",
+    ".mag":{
+      "owner": "sns_af6133e",
+      ".config":{
+        "owner": "sns_af6133e",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

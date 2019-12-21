@@ -1,0 +1,8 @@
+service set_logd_buffer_service /vendor/bin/self-init set_logd_buffer
+    user root
+    oneshot
+    disabled
+    seclabel u:r:rutilsdaemon:s0
+
+on property:ro.oppo.logd.resize=1 && property:sys.boot_completed=1
+   start set_logd_buffer_service

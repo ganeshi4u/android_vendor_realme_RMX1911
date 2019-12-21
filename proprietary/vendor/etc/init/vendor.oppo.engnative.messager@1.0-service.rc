@@ -1,0 +1,5 @@
+service oppo.messager-1-0 /vendor/bin/hw/vendor.oppo.engnative.messager@1.0-service
+    interface vendor.oppo.engnative.messager@1.0::IMessager default
+    class main
+    disabled
+

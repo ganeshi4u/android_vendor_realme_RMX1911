@@ -1,0 +1,28 @@
+service interfaces.factoryInterface@1.0-service /vendor/bin/hw/interfaces.factoryInterface@1.0-service
+    class late_start
+    user system
+    group system sdcard_rw
+    seclabel u:r:factory_services:s0
+
+on property:oppo.wifi.ftm=1
+    start interfaces.factoryInterface@1.0-service
+
+on post-fs-data
+    mkdir /data/vendor/fac_sources/ -p
+    chown root root /data/vendor/fac_sources
+    chmod 0777 /data/vendor/fac_sources
+
+on property:vendor.ptt_ffbm_wifi=start
+    ifconfig wlan0 up
+    write /sys/module/wlan/parameters/con_mode 5
+    start ffbm_wifi_bt
+
+on property:vendor.ptt_ffbm_wifi=stop
+    write /sys/module/wlan/parameters/con_mode 0
+    stop ffbm_wifi_bt
+
+service ffbm_wifi_bt /vendor/bin/ftmdaemon -n -dd
+    user root
+    group root
+    seclabel u:r:wcnss_service:s0
+    disabled

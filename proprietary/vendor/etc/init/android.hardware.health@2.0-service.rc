@@ -1,0 +1,11 @@
+service health-hal-2-0 /vendor/bin/hw/android.hardware.health@2.0-service
+    class hal
+#ifdef ODM_WT_EDIT
+#/* Bin2.Zhang@ODM_WT.BSP.Charger.Basic.1941873, 20190418, Add for store SOC */
+#    user system
+#    group system
+#else /*ODM_WT_EDIT*/
+    user root
+    group system
+#endif /*ODM_WT_EDIT*/
+    file /dev/kmsg w
