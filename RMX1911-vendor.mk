@@ -5336,4 +5336,5 @@ PRODUCT_PACKAGES += \
     RfToolkit \
     TimeService \
     TrustZoneAccessService \
+    WfdCommon \
     com.fingerprints.extension
