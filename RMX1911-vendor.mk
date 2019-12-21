@@ -5331,6 +5331,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1911/proprietary/vendor/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 PRODUCT_PACKAGES += \
+    libantradio \
     ConnectionSecurityService \
     PowerOffAlarm \
     RfToolkit \
